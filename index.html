@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+
+  <div class="container">
+      <h1 id="title">Formulario de encuesta freeCodecamp</h1>
+      <p id="description">Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Nombre: <input id="name" class="input-box" type="text" placeholder="Introduzca su nombre" required></label>
+          <label id="email-label">Email: <input id="email" class="input-box" type="email" placeholder="Introduzca su email"required></label>
+          <label id="number-label">Edad: <input id="number" class="input-box" min="18" max="100" type="number" placeholder="Edad"></label>
+        </fieldset>
+        <fieldset>
+          <label>¿Que opción describe mejor su función actual?
+            <select id="dropdown">
+              <option>Seleccione uno</option>
+              <option>Estudiante</option>
+              <option>Trabajador a media jornada</option>
+              <option>Trabajador a jornada completa</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>¿Recomendarías la plataforma a un amigo?
+            <div class="option">
+              <input type="radio" class="radio-btn" name="recommendation" value="yes">Si
+            </div>
+            <div class="option">
+              <input type="radio" class="radio-btn" name="recommendation" value="no">No
+            </div>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>¿Que te gustaría ver mejorado? (marque todo lo que corresponda)
+            <div class="selection">
+              <input type="checkbox" class="check-box" value="front-end">Proyectos Front-end 
+            </div>
+            <div class="selection">
+              <input type="checkbox" class="check-box" value="back-end">Proyectos Back-end
+            </div>
+            <div class="selection">
+              <input type="checkbox" class="check-box" value="full-stack">Proyectos Full-stack
+            </div>
+            <div class="selection">
+              <input type="checkbox" class="check-box" value="Foro">Foro
+            </div>
+            <div class="selection">
+              <input type="checkbox" class="check-box" value="Videos">Videos
+            </div>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>¿Algún comentario o sugerencia?
+            <textarea rows="10" cols="50" placeholder="Háganos saber aquí.."></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Enviar">
+      </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
